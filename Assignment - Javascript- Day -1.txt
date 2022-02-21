@@ -1,0 +1,107 @@
+1.  To read:
+   1. https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages
+
+Statically typed languages
+A language is statically typed if the type of a variable is known at compile time. For some languages this means that you as the programmer must specify what type each variable is.
+The main advantage here is that all kinds of checking can be done by the compiler, and therefore a lot of trivial bugs are caught at a very early stage.
+Examples: C, C++, Java, Rust, Go, Scala
+Dynamically typed languages
+A language is dynamically typed if the type is associated with run-time values, and not named variables/fields/etc. This means that you as a programmer can write a little quicker because you do not have to specify types every time 
+Examples: Perl, Ruby, Python, PHP, JavaScript, Erlang.
+
+
+
+
+
+
+   2. https://stackoverflow.com/questions/17253545/scripting-language-vs-programming-language
+Programming Language : Is compiled to machine code and run on the hardware of the underlying Operating System.
+Scripting Language : Is unstructure subset of programming language. It is generally interpreted. it basically "scripts" other things to do stuff. The primary focus isn't primarily building your own apps but getting an existing app to act the way you want, e.g. JavaScript for browsers, TCL etc.
+
+   3. https://cs.lmu.edu/~ray/notes/paradigms/
+A programming paradigm is a style, or “way,” of programming.
+•	Imperative: Programming with an explicit sequence of commands that update state.
+•	Declarative: Programming by specifying the result you want, not how to get it.
+•	Structured: Programming with clean, goto-free, nested control structures.
+•	Procedural: Imperative programming with procedure calls.
+•	Functional (Applicative): Programming with function calls that avoid any global state.
+•	Function-Level (Combinator): Programming with no variables at all.
+•	Object-Oriented: Programming by defining objects that send messages to each other. Objects have their own internal (encapsulated) state and public interfaces. Object orientation can be:
+o	Class-based: Objects get state and behavior based on membership in a class.
+o	Prototype-based: Objects get behavior from a prototype object.
+•	Event-Driven: Programming with emitters and listeners of asynchronous actions.
+•	Flow-Driven: Programming processes communicating with each other over predefined channels.
+•	Logic (Rule-based): Programming by specifying a set of facts and rules. An engine infers the answers to questions.
+•	Constraint: Programming by specifying a set of constraints. An engine finds the values that meet the constraints.
+•	Aspect-Oriented: Programming cross-cutting concerns applied transparently.
+•	Reflective: Programming by manipulating the program elements themselves.
+•	Array: Programming with powerful array operators that usually make loops unnecessary.
+
+
+
+
+
+
+
+2. Write a blog on Difference between HTTP1.1 vs HTTP2
+The breaking point in HTTP/1.1 was reached well before the 2015 introduction of HTTP/2.
+In fact, Google was working on it’s own replacement for HTTP/1.1 since the early 2010s, called SPDY (pronounced “speedy”).
+This protocol used the existing infrastructure built for HTTP/1.1, but modified how the requests worked over the infrastructure.
+SPDY used multiplexing to download multiple resources efficiently over a single connection, and could be “back-ported” to existing applications with a translation layer.
+It makes sense that Google would take the lead on this, as they had been developing increasingly complex web-based applications that operated more like desktop applications than websites,
+like GMail and Google Apps. In fact, the SPDY protocol was so well-designed, w3 used it as the basis for HTTP/2.
+So, in 2015, w3 officially adopted the HTTP/2 specification based on SPDY, and all major browsers began supporting the protocol.
+
+These are the high-level differences between HTTP1 and HTTP2:
+•	HTTP2 is binary, instead of textual
+•	HTTP2 is fully multiplexed, instead of ordered and blocking
+•	HTTP2 can, therefore, use one connection for parallelism
+•	HTPP2 uses header compression to reduce overhead
+•	HTTP2 allows servers to “push” responses proactively into client caches
+
+
+3. Write a blog about objects and its internal representation in Javascript
+Objects and its internal representation in Javascript
+Object:
+In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup,
+for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way,
+JavaScript objects can have properties, which define their characteristics.
+
+Creating Objects in JavaScript:
+1.	By object literal
+2.	By creating instance of Object directly (using new keyword)
+By object literal:
+The syntax of creating object using object literal is given below:
+Object = { property1 : value1,   property2:value2, …., propertyN:valueN }
+Property and value is separated by colon(:).
+Example :- var person = { fname:”xxx”, lastname:”yyy”, age:25};
+
+By creating instance of Object directly (using new keyword):
+The syntax of creating object directly is given below:
+Var ojectname = new Object();
+Here, new keyword is used to create object.
+Example: 
+var emp = new Obect();
+emp.id = 101;
+emp.name=”xxx”;
+emp.salary = 50000;
+
+
+Accessing JavaScript Objects:
+The syntax for accessing the property of an object is:
+objectName.property
+or
+objectName[“property”]
+Accessing ‘fname’ from example 1 using dot operator,
+Person.fname
+
+Accessing ‘name’ form example 2 using [],
+Emp[“name”]
+
+
+4. codekata practice
+Completed codekata problem 
+
+
+
+https://github.com/reach2arunprakash/javascript-101/tree/master/ppt
